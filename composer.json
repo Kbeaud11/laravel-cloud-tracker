@@ -33,6 +33,12 @@
             }
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kbeaud11/laravel-cloud-tracker"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
