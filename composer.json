@@ -1,0 +1,38 @@
+{
+    "name": "kbeaud11/laravel-cloud-tracker",
+    "description": "Track usage-based infrastructure costs per model in Laravel Cloud environments.",
+    "keywords": ["laravel", "cloud", "usage", "tracking", "cost", "observability"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelCloudTracker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelCloudTracker\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelCloudTracker\\CloudTrackerServiceProvider"
+            ],
+            "aliases": {
+                "CloudCost": "LaravelCloudTracker\\Facades\\CloudCost"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
