@@ -293,6 +293,16 @@ class CloudCostManager
     }
 
     /**
+     * Start a new fluent query builder for reading cost data.
+     *
+     * @return CloudCostQuery
+     */
+    public function query(): CloudCostQuery
+    {
+        return new CloudCostQuery;
+    }
+
+    /**
      * Reset the builder state for the next fluent chain.
      *
      * @return void

@@ -4,6 +4,7 @@ namespace LaravelCloudTracker\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use LaravelCloudTracker\CloudCostManager;
+use LaravelCloudTracker\CloudCostQuery;
 
 /**
  * @method static CloudCostManager for(\Illuminate\Database\Eloquent\Model $model)
@@ -12,6 +13,7 @@ use LaravelCloudTracker\CloudCostManager;
  * @method static CloudCostManager force()
  * @method static CloudCostManager withMetadata(array $metadata)
  * @method static mixed track(callable $callback)
+ * @method static CloudCostQuery query()
  *
  * @see CloudCostManager
  */
